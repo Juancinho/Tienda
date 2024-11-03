@@ -37,7 +37,7 @@ def conectar_sheet():
 
 def obtener_datos_inventario(service):
     result = service.spreadsheets().values().get(
-        spreadsheetId=SPREADSHEET_ID,
+        spreadsheetId="1fD8qCjpv370GIiog8oJP9NHldBOFNZlMWlCqgftA6fs",
         range="'Inventario'!A1:F6"
     ).execute()
     valores = result.get('values', [])
